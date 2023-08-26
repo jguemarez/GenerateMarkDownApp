@@ -21,59 +21,59 @@ function renderLicenseLink(license) {
 //This function will be used to print the relevant data in the "License" section of the .md file
 function renderLicenseSection(license) {
   return `This is an open-source project under the terms of agreement provided by the ${license} license. 
-  For more information, click on the following link: ${renderLicenseLink(license)}`
+  For more information, click on the following link: <${renderLicenseLink(license)}>`
 }
 
 //This function will be used to print the relevant data in the "Questions" section of the .md file
 function renderQuestionsSection(username, email){
- return`My GitHub username is "${username}" and you can checkout my profile at: https://www.github.com/${username}.
- For further questions and comments, you can mail them to the following address: ${email}.`;
+ return`My GitHub username is "${username}" and you can checkout my profile at: <https://www.github.com/${username}>.
+ For further questions and comments, you can mail them to the following address: <${email}>.`;
 }
 
 //When called with the right "data" argument, this function will generate all the markdown needed for a professional README file. Its implementation uses JS template literals.
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.license)}
+${renderLicenseBadge(data.license)}
 
-  ## Description
+## Description
   
-  ${data.description}
-  
-  ## Table of Contents
-  
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  
-  ## Installation
-  
-  ${data.installation}
-  
-  ## Usage
-  
-  ${data.usage}
-  
-  ## Credits
-  
-  ${data.credits}
-  
-  ## How to Contribute
-  
-  ${data.contributing}
-  
-  ## Tests
-  
-  ${data.tests}
+${data.description}
 
-  ## Questions
+## Table of Contents
 
-  ${renderQuestionsSection(data.username, data.email)}
-  
-  ## License
-  
-  ${renderLicenseSection(data.license)}
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+${data.installation}
+
+## Usage
+
+${data.usage}
+
+## Credits
+
+${data.credits}
+
+## How to Contribute
+
+${data.contributing}
+
+## Tests
+
+${data.tests}
+
+## Questions
+
+${renderQuestionsSection(data.username, data.email)}
+
+## License
+
+${renderLicenseSection(data.license)}
 
 `;
 }
