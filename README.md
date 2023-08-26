@@ -53,7 +53,7 @@ As you are able to see, the first question is immediately prompted.
 
 The app is of the authorship of Jonathan Maldonado Guemarez and the repo can be found at: <https://www.github.com/jguemarez/GenerateMarkDownApp>.
 
-The Google Drive link for the walktrhough video can be found at: <https://drive.google.com/file/d/1lZAZ9lRQSRMZQ_xmyRR82BYflYHyVG3y/view>.
+The Google Drive link for the walktrhough video can be found at: <https://drive.google.com/file/d/1hfdeeY17Rerh_wRJ8lZBjLHDHMgVFTqA/view>.
 
 It was developed from starting code found in : <https://www.github.com/coding-boot-camp/potential-enigma>.
 
